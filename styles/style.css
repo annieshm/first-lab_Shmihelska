@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+
+header li {
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 24px;
+    transition: .5s;
+}
+
+header li:hover {
+    border-bottom: black;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    width: 15%;
+    min-height: 100%;
+    background-color: rgb(165, 187, 229);
+    padding: 25px 0 0 25px;
+}
+
+main {
+    width: 85%;
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    background-color: #64b8df;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    left: 105px;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.sliding-u-l-r:after {
+    content: '';
+    position: absolute;
+    margin-bottom: -1px;
+    bottom: 0;
+    left: 0px;
+    width: 0;
+    border-bottom: 3px solid #000000;
+    transition: 0.44s;
+}
+
+.sliding-u-l-r:hover:after {
+    width: 99%;
+}
+
+.info-photo {
+    width: 500px;
+    height: 550px;
+    padding: 20px 20px 0 20px;
+}
+
+.url a {
+    text-decoration: none;
+    color: #000000;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.container p {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.container input {
+    width: 200px;
+    height: 35px;
+    padding-left: 10px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.container button {
+    width: 100px;
+    height: 39px;
+    background-color: rgb(165, 187, 229);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 15px;
+}
+
+.container button:hover {
+    background-color: rgb(106, 96, 216);
+    color: aliceblue;
+    transform: scale(0.95);
+}
+
+#inputString {
+    width: 600px;
+}
